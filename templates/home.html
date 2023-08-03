@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{{title}}</h1>
+    <p>Thank you for participating in this survey. Please choose your answers carefully as they <b>cannot be changed</b> after moving to the next question.</p>
+
+    <form action="/start" method="POST">
+        <button>Start Survey</button>
+    </form>
+    
+{% endblock %}
